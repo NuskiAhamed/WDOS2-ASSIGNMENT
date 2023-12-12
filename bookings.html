@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>La Mirage | Booking</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/appimages/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/appimages/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/appimages/favicon-16x16.png">
+  <link rel="manifest" href="webmanifest.json">
+  <link rel="mask-icon" href="img/appimages/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/appimages/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="img/appimages/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div id="company">
+		<a href="index.html">
+		<img src="./img/lamirage.png" alt="La Mirage">
+		</a>
+		<h1><span class="highlight">La</span> Mirage</h1>
+    </div>
+    <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="branches.html">Branches</a></li>
+			<li><a href="adventures.html">Adventures</a></li>
+			<li><div class="dropdown">
+			<button class="dropbtn"><a href="restaurants.html">Restuarants</a></button>
+			<div class="dropdown-content">
+				  <a href="Birthday.html">Event 1</a>
+				  <a href="Dayout.html">Event 2</a>
+			</div>
+			  </div> </li>
+			<li class="currentpage"><a href="bookings.html">Bookings</a></li>
+		</ul>
+    </nav>
+  </div>
+
+  <div class="booktext">
+    <h1>Bookings</h1>
+  </div>
+</header>
+
+<section id="cover">
+  <div id="container">
+    <h1>Hotel La Mirage - Book Now!</h1>
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="headings">
+  <div class="bookingform">
+    <form id="bookingForm">
+    
+    <fieldset class="personalcontainer">
+      <legend class="personalName">Personal Information</legend>
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+      <label for="cNo">Contact Number</label>
+      <input type="text" id="cNo" name="cNo" placeholder="Your Contact..">
+    </fieldset>
+	
+	  <fieldset class="personalcontainer">
+      <legend class="personalName">Booking Details</legend>
+      <label for="chechin">Check-In Date:</label>
+        <input type="date" id="chechin" name="checkIn">
+
+        <label for="Checkout">Check-Out Date:</label>
+        <input type="date" id="Checkout" name="Checkout">
+
+        <!-- New form elements for booking -->
+        
+          <div class="container">
+              <div class="sroom">
+              <label for="singleRooms">Number of Single Rooms:</label>
+              <input type="number" id="singleRooms" name="singleRooms" min="0" value="0">
+              </div>
+              <div class="droom">
+              <label for="doubleRooms">Number of Double Rooms:</label>
+              <input type="number" id="doubleRooms" name="doubleRooms" min="0" value="0">
+                </div>  
+                <div class="troom">
+              <label for="tripleRooms">Number of Triple Rooms:</label>
+              <input type="number" id="tripleRooms" name="tripleRooms" min="0" value="0">
+              </div>
+              <div class="extrabed">
+              <label for="extrabed">Extra Beds:</label>
+              <input type="number" id="extrabed" name="extrabed" min="0" value="0">
+              </div>
+          </div>
+          <div class="container">
+            <div class="noa">
+          <label for="NoofAdults">Number of Adults:</label>
+          <input type="number" id="NoofAdults" name="NoofAdults" placeholder="Number of Adults" min="0" value="0">
+          </div>
+          <div class="noc"> 
+            <label for="NoofChildrenabove">Meals For Children Above 5:</label>
+            <input type="number" id="NoofChildren" name="NoofChildren" placeholder="Number of Children" min="0" value="0">
+            </div>
+          <div class="noc"> 
+          <label for="NoofChildren">Number of Children:</label>
+          <input type="number" id="NoofChildren" name="NoofChildren" placeholder="Number of Children" min="0" value="0">
+          </div>
+            </div>  
+          <label for="wifi">WiFi:</label>
+      <select id="wifi" name="wifi">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="view">Preferred View:</label>
+      <select id="view" name="view">
+        <option value="pool">Pool View</option>
+        <option value="garden">Garden View</option>
+        <option value="standard">Standard View</option> 
+      </select>
+    </fieldset>
+
+    <fieldset class="personalcontainer">
+      <legend class="personalName">Adventure - Diving</legend>
+     
+      <div class="container">
+        <div class="slad">
+          <label for="slAD">Sri Lankan Adults:</label>
+          <input type="number" id="slAD" name="slAD" min="0" value="0">
+        </div>
+        <div class="slch">
+          <label for="slCH">Sri Lankan Children:</label>
+          <input type="number" id="slCH" name="slCH" min="0" value="0">
+        </div>
+        <div class="frad">
+          <label for="frAD">Foreign Adults:</label>
+          <input type="number" id="frAD" name="frAD" min="0" value="0">
+      </div>
+        <div class="frch">
+          <label for="frCH">Foreign Children:</label>
+          <input type="number" id="frCH" name="frCH" min="0" value="0">
+        </div>
+      </div>
+      <div class="container">
+        <div class="guideAD">
+          <label for="guideAD">Adult Guides:</label>
+          <input type="number" id="guideAD" name="guideAD" min="0" value="0">
+        </div>
+        <div class="guideCH">
+          <label for="guideCH">Children Guides:</label>
+          <input type="number" id="guideCH" name="guideCH" min="0" value="0">
+      </div>
+      </div>
+    </fieldset>
+      
+    <fieldset class="personalcontainer">
+      <legend class="personalName">EliteGuest Perks</legend>
+      <label for="promoCode">Promo Code:</label>
+      <input type="text" id="promoCode" name="promoCode" placeholder="Enter Promo Code">
+
+      <div class="loyalty">
+        <label>
+          <input type="text" name="loyalty" id="show_loyaalty" readonly>
+          <button type="button" id="loyalty">Check loyalty</button>
+        </label>
+      </div>
+      <button type="button" id="addBooking">Book Now</button>
+      <button type="button" id="add2fav">Add to Favorites</button>
+    </fieldset>
+    
+    </form>
+  </div>
+</section>
+
+<!-- Display booking information -->
+<section id="bookingInfo">
+  <h2>Booking Information</h2>
+  <h2>Current Booking</h2>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>Check-In</td>
+        <td>Check-Out</td>
+        <td>Stay Duration</td>
+        <td>Single Rooms</td>
+        <td>Double Rooms</td>
+        <td>Triple Rooms</td>
+        <td>Extra Bed</td>
+        <td>Adults</td>
+        <td>Children</td>
+        <td>Adventure Adults</td>
+        <td>Adventure Children</td>
+        <td>Guide Adults</td>
+        <td>Guide Children</td>
+        <td>Discount</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td id="currentCheckIn"></td>
+        <td id="currentCheckOut"></td>
+        <td id="currentStayDuration"></td>
+        <td id="currentSingleRooms"></td>
+        <td id="currentDoubleRooms"></td>
+        <td id="currentTripleRooms"></td>
+        <td id="currentExtraBed"></td>
+        <td id="currentAdults"></td>
+        <td id="currentChildren"></td>
+        <td id="currentAdventureAdults"></td>
+        <td id="currentAdventureChildren"></td>
+        <td id="currentGuideAdults"></td>
+        <td id="currentGuideChildren"></td>
+        <td id="currentDiscount"></td>
+        <td id="currentTotal"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <p>Cost of Current Booking: <span id="currentBookingCost"></span></p> -->
+  <h2>Overall Booking</h2>
+  <table border="1">
+    <tbody>
+      <tr>
+        <td>Check-In</td>
+        <td>Check-Out</td>
+        <td>Stay Duration</td>
+        <td>Single Rooms</td>
+        <td>Double Rooms</td>
+        <td>Triple Rooms</td>
+        <td>Extra Bed</td>
+        <td>Adults</td>
+        <td>Children</td>
+        <td>Adventure Adults</td>
+        <td>Adventure Children</td>
+        <td>Guide Adults</td>
+        <td>Guide Children</td>
+        <td>Overall Discount</td>
+        <td>Overall Total</td>
+      </tr>
+      <tr>
+        <td id="overallCheckIn"></td>
+        <td id="overallCheckOut"></td>
+        <td id="overallStayDuration"></td>
+        <td id="overallSingleRooms"></td>
+        <td id="overallDoubleRooms"></td>
+        <td id="overallTripleRooms"></td>
+        <td id="overallExtraBed"></td>
+        <td id="overallAdults"></td>
+        <td id="overallChildren"></td>
+        <td id="overallAdventureAdults"></td>
+        <td id="overallAdventureChildren"></td>
+        <td id="overallGuideAdults"></td>
+        <td id="overallGuideChildren"></td>
+        <td id="overallDiscount"></td>
+        <td id="overallTotal"></td>
+
+    </tbody>
+  </table>
+</section>
+
+<footer>
+	<div class="footer-content">
+	<h3>La Mirage Hotel</h3>
+	<p>Your Dream Destinaion</p>
+
+	<ul class="socials">
+		   <li><a href=”#”><img src="./img/fb.png" alt="facebook"></a></li>
+		   <li><a href=”#”><img src="./img/insta.png" alt="instagram"></a></li>
+		   <li><a href=”#”><img src="./img/twitter.png" alt="twitter"></a></li>
+		   <li><a href=”#”><img src="./img/whatsapp.png" alt="whatsapp"></a></li>
+	</ul>
+</div>
+
+<div class=”footer-bottom”>
+<p>copyright &copy;2023 <a href=”#”>NuskiAhamed</a>  </p>
+</div>
+</footer>
+
+
+</body>
+</html>

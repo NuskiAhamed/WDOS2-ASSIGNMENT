@@ -1,0 +1,1045 @@
+*{
+  overflow-x: hidden;
+}
+
+body{
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #F0F8FF;
+}
+
+/*Global*/
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.fullwidth {
+  padding: 0;
+}
+
+.container_2{
+	display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+	overflow: hidden;
+}
+
+.container_3{
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 50px;
+}
+
+
+
+.container_4{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.maintext{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.branchtext{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.adventuretext{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.resttext{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.booktext{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+#company img{
+	width: 90px;
+	height: 90px;
+}
+
+/* Header */
+header{
+	background: url(../img/cover.webp);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #033E3E 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header nav ul li {
+  padding-left: 20px;
+}
+
+header #company {
+	float: left;
+}
+
+header #company h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight, header .currentpage a{
+	color: #FFFACD;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #FFFACD;
+	font-weight: bold;
+}
+
+.coverpage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.coverpage img{
+  width: 100%;
+  height: auto;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  text-transform: uppercase; 
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* cover */
+#cover{
+	min-height: 200px;
+	background: url('../img/cover.webp') no-repeat;
+	text-align: center;
+  color: whitesmoke;
+}
+
+#cover h1{
+	margin-top: 0px;
+	font-size: 50px;
+	margin-bottom: 0;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+#cover p{
+	font-size: 20px;
+  padding: 0 50px;
+}
+
+/* Personal information */
+
+.personalcontainer{
+  border: 5px solid #02447B;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.personalName{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #02447B;
+}
+
+
+
+/* headings */
+#headings{
+	margin-top: 20px;
+}
+
+
+#headings .box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#headings .box img{
+	width: 90px;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #3C565B;
+	text-align: center;
+}
+
+
+/* Table styles of Branches Page */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th{
+	text-align: left;
+  padding: 12px;
+  font-size: 20px;
+  color: #033E3E;
+  text-align: center;
+  font-weight: bold;
+}
+
+ td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+	color: #007C80;
+	font-weight: bold;
+}
+
+tr img{
+	width: 80%;
+	height: 470px;
+}
+
+#branches h2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+	font-weight: bold;
+	color: #2E8B57;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+
+
+/* Image Gallery of Adventure Page */
+
+.adventuretopic{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.adventuretopic h2{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.adventuretopic h4{
+  padding: 0 50px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 768px){
+   .container 
+    {flex-direction: column;
+    align-items: center;
+    padding: 0 20px;}
+
+  .adventuretext h1{
+    font-size: 5px;
+  }
+    
+
+  }
+
+  .container_3{
+    padding: 0 20px;
+  }
+
+  .container_4{
+    gap: 0.5rem
+  }
+
+  .maintext h1 {
+    font-size: 120px;
+    display: block;
+  }
+
+  .booktext h1 {
+    font-size: 120px;
+  }
+
+  .adventuretext h1{
+    font-size: 120px;
+  }
+
+  .branchtext  h1 {
+    font-size: 120px;
+  }
+
+  .resttext h1 {
+    font-size: 120px;
+  }
+
+  header{
+    padding-top: 10px;
+    min-height: auto;
+  }
+
+  header ul{
+    text-align: center;
+  }
+
+  header li{
+    display: block;
+    padding: 10px 0;
+  }
+
+  header h1{
+    font-size: 24px;
+  }
+
+  header nav{
+    float: none;
+    margin-top: 10px;
+  }
+
+  header .highlight,
+  header .currentpage a {
+    font-weight: normal;
+  }
+
+  .coverpage img{
+    height:auto;
+  }
+
+  .responsive{
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  #type1 h1,
+  #type2 h1,
+  #type3 h1 {
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  #type1 p,
+  #type2 p,
+  #type3 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .bookingform{
+    padding: 10px;
+  }
+
+  footer .footer-content h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  footer .footer-content p{
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .socials img{
+    width: 20%;
+    height: 20%;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .footer-menu ul{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* types of restaurants */
+#type1{
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+	background: url('../img/type1.jpg') no-repeat;
+  background-position:center;
+  background-size:cover;
+  filter: brightness(0.9);
+	text-align: center;
+
+}
+#type2{
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+	background: url('../img/type2.jpg') no-repeat;
+	background-position:center;
+  background-size:cover;
+  filter: brightness(0.9);
+	text-align: center;
+}
+#type3{
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+	background: url('../img/type3.jpg') no-repeat;
+	background-position:center;
+  background-size:cover;
+  filter: brightness(0.8);
+	text-align: center;
+}
+
+#type1 h1, #type3 h1, #type2 h1{
+	font-size: 32px;
+	font-weight: bold;
+	color: rgb(93, 84, 30);
+  background-color: rgb(40, 40, 40);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#type1 p, #type3 p, #type2 p{
+	font-size: 20px;
+	color: rgb(93, 84, 30);
+  background-color: rgb(40, 40, 40);
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007C80;
+  color:#fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover{
+  background-color: #005E61;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #3a63a7;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Booking Form Styles */
+#headings {
+  padding: 2rem 0;
+}
+
+.bookingform {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"],
+form button {
+  background-color: #3a63a7;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1.5em; /* Increase the font size for the Adventure label */
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.container {
+  border: 1px solid #ccc; /* Add a border around the container */
+  padding: 10px; /* Add padding to the container for spacing */
+  margin-bottom: 15px; /* Add bottom margin for spacing between containers */
+}
+
+/* Style for individual input sections within the Adventure section */
+.container > div {
+  margin-bottom: 10px; /* Add bottom margin for spacing between input sections */
+}
+
+/* Style for input labels */
+.container label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style for number input fields */
+.container input[type="number"] {
+  width: 50px; /* Adjust the width of the number input fields */
+  padding: 5px; /* Add padding to the number input fields for spacing */
+}
+
+/* Style for promo code and loyalty section */
+#promoCode, #show_loyaalty {
+  width: 200px; /* Adjust the width of the input fields */
+  padding: 8px; /* Add padding to the input fields for spacing */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.loyalty button {
+  padding: 8px 15px; /* Add padding to the loyalty button for spacing */
+}
+
+/* Style for Book Now and Add to Favorites buttons */
+#addBooking, #add2fav {
+  padding: 10px 20px; /* Add padding to the buttons for spacing */
+  margin-top: 15px; /* Add top margin for spacing */
+}
+
+/* Add this CSS code to your style.css file or within a <style> tag in your HTML file */
+
+.bookingform {
+  background-color: #f0f0f0; /* Set the background color for the booking form */
+  padding: 20px; /* Add padding for spacing inside the form */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+/* Style for Adventure section */
+.bookingform label {
+  font-size: 1.5em; /* Increase the font size for the Adventure label */
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.bookingform .container {
+  border: 1px solid #ccc; /* Add a border around the container */
+  padding: 10px; /* Add padding to the container for spacing */
+  margin-bottom: 15px; /* Add bottom margin for spacing between containers */
+}
+
+/* Style for individual input sections within the Adventure section */
+.bookingform .container > div {
+  margin-bottom: 10px; /* Add bottom margin for spacing between input sections */
+}
+
+/* Style for input labels */
+.bookingform .container label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style for number input fields */
+.bookingform .container input[type="number"] {
+  width: 50px; /* Adjust the width of the number input fields */
+  padding: 5px; /* Add padding to the number input fields for spacing */
+}
+
+/* Style for promo code and loyalty section */
+.bookingform #promoCode,
+.bookingform #show_loyaalty {
+  width: 200px; /* Adjust the width of the input fields */
+  padding: 8px; /* Add padding to the input fields for spacing */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.bookingform .loyalty button {
+  padding: 8px 15px; /* Add padding to the loyalty button for spacing */
+}
+
+/* Style for Book Now and Add to Favorites buttons */
+.bookingform #addBooking,
+.bookingform #add2fav {
+  padding: 10px 20px; /* Add padding to the buttons for spacing */
+  margin-top: 15px; /* Add top margin for spacing */
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #3a63a7;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.socials li {
+  margin-right: 1rem;
+}
+
+.socials img {
+  width: 30px; /* Adjust the size of social icons */
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.socials li {
+  margin-right: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+
+/*footer */
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+
+    padding-bottom: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials img{
+    width: 25%;
+    height: 25%;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+
+.loyalty{
+  width: 100%;
+  display: flex;
+  
+}
+.loyalty input{
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  height: 30px;
+}
+.loyalty button{
+  width: 200px;
+  margin: 10px;
+  
+  height: 35px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+/*** Feature Image div ***/
+
+.feautre_div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.feautre_div_single_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
+.feautrediv_img_container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+}
+
+img.feautre_div_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.feautre_div_content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+}
+
+.feautre_div_txt_content {
+    padding: 0 30px;
+}
+
+@media (max-width:500px) {
+  
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .maintext h1 {
+    font-size: 5rem;
+  }
+
+  .branchtext h1{
+    font-size: 4rem;
+  }
+
+  .adventuretext h1{
+    font-size: 3rem;
+  }
+
+  .booktext h1{
+    font-size: 4rem;
+  }
+
+  .resttext h1{
+    font-size: 3rem;
+  }
+
+  .feautre_div_single_item:nth-last-of-type(odd){
+    flex-direction: row-reverse;
+  }
+
+  .feautrediv_img_container{
+    width: 100%;
+  }
+
+  .feautre_div_content {
+    width: 100%;
+  }
+}
